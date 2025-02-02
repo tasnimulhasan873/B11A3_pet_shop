@@ -34,7 +34,7 @@
                 <!-- header logo container -->
                 <div class="flex gap-3 items-center">
                     <img class="mt-5 mb-6 ml-4" src="c1-assets/logo-header.png" alt="">
-                    <p class="hidden sm:block mt-9 mb-8">Browse<span>4</span>Pets</p>
+                    <p class="hidden sm:block mt-9 mb-8">Browse<span class="text-[#FFDC26] text-2xl ">4</span>Pets</p>
                 </div>
 
                 <!-- navbar anchor -->
@@ -68,34 +68,45 @@
         sm:hidden">
         <!-- Banner div -->
 
+        <div class="max-w-screen-xl mx-auto mt-[76px] overflow-hidden">
+            <div class="group relative">
 
-        <div class="mt-[76px] max-w-screen-xl mx-auto">
-            <h3 class="ml-4 mb-4 sm:text-5xl text-3xl font_adlam font-normal ">Pamper Your Pet,<br>
-                Because They Deserve <br> the Bes</h3>
-            <p class="ml-4 mb-6 sm:text-xl text-base">Discover a world of treats, toys, and essentials handpicked for
-                <br> your furry
-                friends.
-                Shop now and make tails wag with joy!
-            </p>
-            <button class="ml-4 bg-[#FFDC26]  px-7 py-2 rounded-lg">Find a pet</button>
+                <!-- Heading with scroll animation -->
+                <h3
+                    class="ml-4 mb-4 sm:text-5xl text-3xl font_adlam font-normal opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700 ease-out">
+                    Pamper Your Pet,<br> Because They Deserve <br> the Best
+                </h3>
 
-            <div
-                class="sm:hidden mb-14 w-[630px] h-[360px] -mt-[131px] bg-[url(c1-assets/cat-big.png)] bg-cover bg-center">
+                <!-- Paragraph with animation delay -->
+                <p
+                    class="ml-4 mb-6 sm:text-xl text-base opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700 ease-out delay-200">
+                    Discover a world of treats, toys, and essentials handpicked for <br> your furry friends.
+                    Shop now and make tails wag with joy!
+                </p>
+
+                <!-- Button with animation delay -->
+                <button
+                    class="ml-4 bg-[#FFDC26] px-7 py-2 rounded-lg opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700 ease-out delay-400">
+                    Find a pet
+                </button>
+
+                <!-- Image (only on small screens) -->
+                <div
+                    class="sm:hidden mb-14 w-[630px] h-[360px] -mt-[131px] bg-[url(c1-assets/cat-big.png)] bg-cover bg-center opacity-0 translate-y-5 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-700 ease-out delay-600">
+                </div>
+
             </div>
-
         </div>
+
         <div
             class=" max-w-screen-xl mx-auto bg-[url(c1-assets/cat-big.png)] sm:w-[1260px] sm:h-[749px] sm:-mt-[224px] sm:mb-[140px]  ">
         </div>
 
 
-
-
-
     </header>
     <main class="ml-4 mr-4 ">
         <!-- Categories container -->
-        <div class="max-w-screen-xl mx-auto mb-[126px] ">
+        <div class="max-w-screen-xl mx-auto mb-4 sm:mb-[126px] ">
             <h3 class=" font_adlam text-2xl sm:text-4xl mb-8 sm:12">Browse By Categories</h3>
             <!-- card container -->
             <div class="grid grid-cols-2 sm:grid-cols-6 gap-2 ">
@@ -161,8 +172,8 @@
         </div>
 
         <!-- Trending products -->
-        <div class="sm:bg-[#FFF9F4] mb-16">
-            <div class="max-w-screen-xl mx-auto ">
+        <div class="sm:bg-[#FFF9F4] mb-9 sm:mb-16">
+            <div class="max-w-screen-xl mx-auto py-10 sm:py-[130px] ">
                 <h3 class="font_adlam text-2xl sm:text-4xl ">Trending Pet Products</h3>
                 <!-- pet products container -->
                 <div class="flex flex-col sm:flex-row gap-6">
@@ -363,7 +374,7 @@
                             <!-- Image Container -->
                             <div
                                 class="bg-[#FFF9F4] ml-4 p-2 rounded-lg w-[90px] h-[90px] flex items-center justify-center">
-                                <img src="c1-assets/fish-cartoon.png" alt="Dog" class="w-12 h-12">
+                                <img src="c1-assets/pet-couch.png" alt="Dog" class="w-12 h-12">
                             </div>
 
                             <!-- Card Content -->
@@ -384,11 +395,12 @@
 
                         </div>
                         <div
-                            class="w-[296px] sm:w-[245px] h-[139px] sm:h-[145px] border border-gray-300 rounded-xl bg-white -p-[4px] flex items-center gap-4  mt-11">
+                            class="hidden sm:flex w-[296px] sm:w-[245px] h-[139px] sm:h-[145px] border border-gray-300 rounded-xl bg-white -p-[4px] items-center gap-4 mt-11">
+
                             <!-- Image Container -->
                             <div
                                 class="bg-[#FFF9F4] ml-4 p-2 rounded-lg w-[90px] h-[90px] flex items-center justify-center">
-                                <img src="c1-assets/rabbit.png" class="w-12 h-12">
+                                <img src="c1-assets/rabbit-cartoon.png" class="w-12 h-12">
                             </div>
 
                             <!-- Card Content -->
@@ -418,36 +430,155 @@
         <!-- everyday low price -->
         <div class="max-w-screen-xl mx-auto">
 
-            <h3>Everyday low Price</h3>
+            <h3 class="text-2xl sm:text-4xl font_adlam pb-4">Everyday low Price</h3>
             <!-- big card container -->
-            <div>
+            <div class="flex flex-col sm:flex-row gap-6 sm:gap-6">
                 <!-- card1 -->
-                <div class="bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] p-6 rounded-lg flex items-center ">
-                    <div>
-                        <p class="sm:text-xl hidden">Under Price</p>
-                        <h4 class="text-3xl font_adlam">Pet Grooming Mitt</h4>
-                        <p class="font_adlam sm:text-2xl text-white hidden">Easy Hair Removal</p>
+                <div
+                    class="bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] sm:p-16 p-8 rounded-lg flex items-center  sm:w-[784px] sm:h-[480px] w-[607px] h-[334px]">
+                    <div class="sm:pr-12 pr-0">
+                        <p class="sm:text-xl hidden sm:block">Under Price</p>
+                        <h4 class="sm:text-3xl text-xl  font_adlam  w-[299px]">Pet Grooming Mitt</h4>
+                        <p class="font_adlam sm:text-2xl sm:block sm:text-white hidden">Easy Hair Removal</p>
                         <h3 class="font_adlam text-3xl sm:text-5xl text-white sm:text-black">$7.99</h3>
                     </div>
                     <div>
-                        <img src="c1-assets/cute-dog-mid.png" alt="Cute Dog" class="w-32 h-32 object-cover">
+                        <img src="c1-assets/cute-dog-mid.png" alt="Cute Dog"
+                            class="sm:w-[382px] w-[242px]  sm:h-[480px] h-[268px] object-cover">
                     </div>
                 </div>
-                
 
-                
+
+
                 <!-- card2 -->
-                <div>
-                    <h4 class="text-3xl font_adlam">T-Shirt for Dogs</h4>
-                 
-                    <h3 class="font_adlam text-3xl sm:text-5xl text-[#FFDC26]">$7.99</h3>
+                <div
+                    class="bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] sm:w-[512px] sm:h-[480px] w-[607px] h-[334px] sm:p-12 p-8  rounded-lg flex items-center ">
+                    <div>
+
+                        <h4 class="sm:text-3xl text-lg font_adlam -mt-[132px] w-[299px]">T-Shirt for Dogs</h4>
+
+                        <h3 class="font_adlam text-3xl sm:text-5xl text-[#FFDC26]">$7.99</h3>
+
+                    </div>
+                    <div>
+                        <img src="c1-assets/cute-pet-mid.png"
+                            class="sm:mt-[117px] mt-0 sm:w-[312px] w-[242px]  sm:h-[347px] h-[268px]" alt="">
+                    </div>
                 </div>
             </div>
-            </div>
+        </div>
         </div>
 
+
+
+
+
+
+        <!-- pet details -->
+        <div class="max-w-screen-xl mx-auto sm:mt-24 mt-8 p-4">
+            <h3 class="font_adlam text-3xl text-center sm:text-left mb-6">Cat Senses</h3>
+            <div class="flex flex-col sm:flex-row gap-8">
+                <!-- Vision -->
+                <div class="bg-[#F9DF8A] rounded-lg p-4 flex sm:flex-row flex-col items-center sm:w-1/3">
+                    <img class="w-[200px] sm:w-[180px] h-[150px] sm:h-[200px] rounded-lg" src="c1-assets/vision-cat.JPG"
+                        alt="Vision">
+                    <p class="sm:ml-4 mt-4 sm:mt-0 text-center sm:text-left break-words">
+                        Cats have excellent night vision and can see at one-sixth the light level required for human
+                        vision.
+
+                    </p>
+                </div>
+
+                <!-- Hearing -->
+                <div class="bg-[#F9DF8A] rounded-lg p-4 flex sm:flex-row flex-col items-center sm:w-1/3">
+                    <img class="w-[200px] sm:w-[180px] h-[150px] sm:h-[200px] rounded-lg" src="c1-assets/hearing.jpg"
+                        alt="Hearing">
+                    <p class="sm:ml-4 mt-4 sm:mt-0 text-center sm:text-left break-words">
+                        A cat's hearing is most sensitive between 500 Hz and 32 kHz. It can detect a wide frequency
+                        range,
+                        from 55 Hz to 79 kHz, surpassing human and canine hearing.
+                    </p>
+                </div>
+
+                <!-- Whiskers -->
+                <div class="bg-[#F9DF8A] rounded-lg p-4 flex sm:flex-row flex-col items-center sm:w-1/3">
+                    <img class="w-[200px] sm:w-[180px] h-[150px] sm:h-[200px] rounded-lg" src="c1-assets/Whiskers.jpg"
+                        alt="Whiskers">
+                    <p class="sm:ml-4 mt-4 sm:mt-0 text-center sm:text-left break-words">
+                        Cats have movable whiskers (vibrissae) that help navigate spaces and detect objects,
+                        even sensing air currents in darkness.
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+        <!-- subscribe section start -->
+        <div class="max-w-screen-xl mx-auto sm:mt-24 mt-8 relative z-10 -mb-[183px] ">
+            <!-- subscribe container -->
+            <div
+                class="flex sm:flex-row flex-col items-center sm:gap-[117px] gap-8 bg-[#FFF9F4] rounded-lg pt-7 sm:text-left text-center">
+                <!-- subscribe image -->
+                <div class="sm:pl-20 pl-0">
+                    <img src="c1-assets/cute-pet-mid.png" alt="">
+                </div>
+                <!-- subscribe title -->
+                <div class="w-full sm:w-auto">
+                    <h3 class="sm:text-4xl text-xl font-adlam sm:mb-5 mb-3">Get Pawsome News!</h3>
+                    <p class="text-base sm:text-xl sm:mb-9 mb-5">Exclusive training tips, ticks, product deals and more.
+                    </p>
+                    <input
+                        class="sm:py-4 py-1 sm:pl-4 sm:rounded-lg sm:mb-9 mb-3 rounded-md pl-2 sm:pr-[290px] pr-[140px] border border-gray-300  sm:w-auto"
+                        type="text" placeholder="Enter email...">
+                    <br>
+                    <button class="bg-[#FFDC26] px-7 py-2 rounded-lg mb-8 sm:mb-0">Subscribe</button>
+                </div>
+            </div>
+
+        </div>
+
+
     </main>
-    <footer>
+
+
+
+    <footer class="bg-[#FFDC2680] sm:h-[654px] h-[710px] ">
+        <div class="flex sm:flex-row flex-col sm:pt-[374px] pt-[204px]  ">
+            <!-- footer first part -->
+            <div class="sm:ml-[156px] ml-4">
+                <div class="flex gap-3 items-center">
+                    <img class="mt-5 mb-6 ml-2" src="c1-assets/logo-footer.png" alt="">
+                    <p class=" sm:block mt-9 mb-8">Browse<span class="text-[#FFDC26] text-2xl ">4</span>Pets</p>
+                </div>
+                <p class="pb-9 sm:pd-[0px]">Discover a world of treats, toys, <br> and essentials handpicked for your
+                    furry <br> friends</p>
+
+            </div>
+            <!-- footer second part -->
+            <div class="sm:ml-[230px] ml-4">
+                <!-- navbar anchor -->
+                <ul class="  ">
+                    <li class="mb-8"> <a href="">Find a pet</a></li>
+                    <li class="mb-8"> <a href="">Breeds</a></li>
+                    <li class="mb-8"> <a href="">Contact us</a></li>
+                </ul>
+            </div>
+            <!-- footer third part -->
+            <div class="sm:ml-[410px] ml-4 sm:pt-[99px] pt-[39px]">
+                <p>Follow Us</p>
+                <!-- footer icon -->
+                <div class="flex w-[184px] justify-between">
+
+
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-youtube"></i>
+
+                </div>
+            </div>
+        </div>
 
     </footer>
 
